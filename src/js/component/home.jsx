@@ -19,17 +19,11 @@ const Home = () => {
 	};
 
 	const listTasks = tasks.map((task, index) => (
-		<li
-			className="list-group-item"
-			key={index}
-			onMouseEnter={() => setShow(true)}
-			onMouseLeave={() => setShow(false)}>
+		<li className="list-group-item" key={index}>
 			{task}
-			{show && (
-				<i
-					className="fas fa-times float-end"
-					onClick={() => deleteTask(index)}></i>
-			)}
+			<i
+				className="fas fa-times float-end hide"
+				onClick={() => deleteTask(index)}></i>
 		</li>
 	));
 

@@ -15,3 +15,11 @@
 .container {
     width: 500px;
 }
+
+.hide {
+    visibility: hidden;
+  }
+  
+  li:hover .hide {
+    visibility: visible;
+  }
